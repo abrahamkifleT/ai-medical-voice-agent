@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
   IconClipboardCopy,
@@ -9,7 +9,6 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
-
 
 export function FeatureBentoGrid() {
   return (
@@ -115,7 +114,7 @@ const SkeletonTwo = () => {
           key={"skelenton-two" + i}
           variants={variants}
           style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
+            maxWidth: (((i + 1) * 37) % 60) + 40 + "%",
           }}
           className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
         ></motion.div>
